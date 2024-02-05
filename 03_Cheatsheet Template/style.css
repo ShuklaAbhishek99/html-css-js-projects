@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2d2d2d;
+  color: whitesmoke;
+  height: 70px;
+  font-size: 40px;
+}
+
+.content {
+  font-family: "Potta One", system-ui;
+}
+
+.container {
+  width: 60vw;
+  padding: 30px 0;
+  margin: auto;
+  font-family: "Roboto", sans-serif;
+}
+
+.logo {
+  padding: 0 13px;
+}
+
+.logo img {
+  width: 40px;
+}
+
+.toolbar-item button {
+  cursor: pointer !important;
+  color: white !important;
+  border: 2px solid white !important;
+  border-radius: 11px !important;
+  padding: 14px 15px !important;
+}
