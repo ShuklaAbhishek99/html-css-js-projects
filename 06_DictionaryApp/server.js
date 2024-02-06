@@ -17,8 +17,8 @@ app.get("/searchword", (req, res) => {
     url: "https://dictionary-by-api-ninjas.p.rapidapi.com/v1/dictionary",
     params: { word: "good" },
     headers: {
-      "X-RapidAPI-Key": "b26a4dee57msh0a7e93b0c730934p140141jsn96dcbd8c5fe1",
-      "X-RapidAPI-Host": "dictionary-by-api-ninjas.p.rapidapi.com",
+      "X-RapidAPI-Key": "bkey1",
+      "X-RapidAPI-Host": "key2",
     },
   };
 
