@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background: #141212;
+    color: rgb(233, 117, 140);
+    height: 7vh;
+    font-size: 25px;
+    font-family: "DM Serif Display", serif;
+}
+
+nav ul {
+    list-style: none;
+}
+
+.gameContainer {
+    background-color: greenyellow;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.container {
+    display: grid;
+}
