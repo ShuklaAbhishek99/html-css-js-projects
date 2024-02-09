@@ -46,6 +46,7 @@ const checkWin = () => {
 };
 
 // Primary Game Logic
+music.play();
 const boxes = document.getElementsByClassName("box");
 Array.from(boxes).forEach((element) => {
     // text inside the box of X' and
@@ -73,7 +74,8 @@ document.getElementById("reset").addEventListener("click", () => {
     Whosturn = "X";
     isGameOver = false;
     document.querySelector(".line").style.width = "0vw";
-    document.getElementsByClassName("info")[0].innerText = "Turn for " + Whosturn;
+    document.getElementsByClassName("info")[0].innerText =
+        "Turn for " + Whosturn;
     document
         .querySelector(".imgbox")
         .getElementsByTagName("img")[0].style.width = "0px";
