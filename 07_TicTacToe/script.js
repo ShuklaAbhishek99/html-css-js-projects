@@ -14,6 +14,8 @@ const changeTurn = () => {
 // Function to check for win
 const checkWin = () => {
     let boxtext = document.getElementsByClassName("boxtext");
+    // array structure [1st 3 indexes for win possiblity, last 3 indexes for translate position(2) and
+    // rotation of life after a match has made/win]
     let wins = [
         [0, 1, 2, 5, 5, 0],
         [3, 4, 5, 5, 15, 0],
