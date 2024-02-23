@@ -2,6 +2,8 @@ function multipleBy5(num) {
     return num * 5;
 }
 
+// every function has its own "this"
+
 // as everything is object in JS so this work without any difficulty
 multipleBy5.power = 2;
 console.log(multipleBy5(5));
