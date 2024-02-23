@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            h3 {
+                color: white;
+            }
+        </style>
+    </head>
+    <body style="background-color: #212121">
+        <h3>
+            0 &rightarrow; Arrow;;; UNSENT Client has been created. open() not
+            called yet.
+        </h3>
+        <h3>1 &rightarrow; OPENED open() has been called.</h3>
+        <h3>
+            2 &rightarrow; HEADERS_RECEIVED send() has been called, and headers
+            and status are available.
+        </h3>
+        <h3>
+            3 &rightarrow; LOADING Downloading; responseText holds partial data.
+        </h3>
+        <h3>4 &rightarrow; DONE The operation is complete.</h3>
+        <!-- API is just like a string/wire which connects two end points so they can talk to each other
+            it can be own frontend to own backend (vice-versa), backend to backend, 
+            other's backend to owr frontend, owr frontend to other's backend -->
+    </body>
+    <script>
+        const requestUrl = "https://api.github.com/users/ShuklaAbhishek99";
+        const xhr = new XMLHttpRequest();
+        xhr.open("GET", requestUrl);
+        xhr.onreadystatechange = function () {
+            console.log(xhr.readyState);
+            if (xhr.readyState === 4) {
+                const data = JSON.parse(this.responseText);
+                console.log(typeof data);
+                console.log(data.followers);
+            }
+        };
+        xhr.send();
+    </script>
+</html>
