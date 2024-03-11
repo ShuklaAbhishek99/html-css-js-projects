@@ -10,8 +10,8 @@ A [`fetch()`](https://developer.mozilla.org/en-US/docs/Web/API/fetch) promise on
 
 ## Object
 
--   collection of properties and methods
--   toLowerCase
+- collection of properties and methods
+- toLowerCase
 
 ## why use OOP
 
@@ -19,20 +19,24 @@ A [`fetch()`](https://developer.mozilla.org/en-US/docs/Web/API/fetch) promise on
 
 Object literal
 
--   Constructor function
--   Prototypes
--   Classes
--   Instances (new, this)
+- Constructor function
+- Prototypes
+- Classes
+- Instances (new, this)
 
 ## 4 pillars
 
-Abstraction Encapsulation Inheritance Polymorphism
+* Abstraction
+* Encapsulation
+* Inheritance
+* Polymorphism
 
 ### _Prototype_
 
--   Prototype is the reason we can use access the "new" keyword
--   Classes, "this" keyword
--   Prototypal inheritance, or Simply Js interitance are also present due to this
+- Prototype is the reason we can use access the "new" keyword
+- Classes, "this" keyword
+- Prototypal inheritance, or Simply Js interitance are also present due to this
 
 ## Everything goes to Object (it is the superior in object)
+
 ![image](./ObjectEvery.png)

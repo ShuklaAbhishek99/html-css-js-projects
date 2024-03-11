@@ -28,7 +28,7 @@ Array.prototype.heyAbhishek = function () {
 // heroPower.abhishek() // object
 // myHeros.abhishek() // array
 
-// power give to array accessible only by array
+// power given to array accessible only by array
 // myHeros.heyAbhishek() // array
 // heroPower.heyAbhishek() // object
 

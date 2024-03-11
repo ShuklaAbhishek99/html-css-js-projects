@@ -22,20 +22,20 @@ console.log(coffee.changeUsername());
 
 // behind the scene
 
-function User(username, email, password) {
+function User1(username, email, password) {
     this.username = username;
     this.email = email;
     this.password = password;
 }
 
-User.prototype.encryptPassword = function () {
+User1.prototype.encryptPassword = function () {
     return `${this.password}abc`;
 };
-User.prototype.changeUsername = function () {
+User1.prototype.changeUsername = function () {
     return `${this.username.toUpperCase()}`;
 };
 
-const tea = new User("tea", "tea@gmail.com", "123");
+const tea = new User1("tea", "tea@gmail.com", "123");
 
 console.log(tea.encryptPassword());
 console.log(tea.changeUsername());

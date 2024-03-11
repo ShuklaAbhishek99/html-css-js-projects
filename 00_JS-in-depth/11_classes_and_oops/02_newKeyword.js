@@ -39,7 +39,7 @@ const tea = createUser("tea", 250);
 // there are prototypes under the prototype and it stretches under the hood
 // but we have to write single name and not .method1().prototype.method2().prototype
 // This is the nature of JS to dig deep, which is called as inheritance
-// if won't stop until it finds the value or null(if no value is found)
+// it won't stop until it finds the value or null(if no value is found)
 // We need "new" which inject the method we defined, after adding new, it injects that
 // to particular instance
 // methods accessing

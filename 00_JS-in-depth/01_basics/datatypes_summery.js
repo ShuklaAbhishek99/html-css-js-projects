@@ -1,6 +1,6 @@
 //  Primitive
 
-//  7 types : String, Number, Boolearn, null, undefined, Symbol, BigInt
+//  7 types : String, Number, Boolean, null, undefined, Symbol, BigInt
 // primitive data types are called by reference
 const score = 100;
 const scoreValue = 100.3;
@@ -9,6 +9,9 @@ const isLoggedIn = false;
 const outsideTemp = null;
 let userEmail;
 
+// symbol is used to create a unique variable, even if the value passed is same
+// They are unique and immutable values, often used as object property keys when
+// you want to create non-colliding property names.
 const id = Symbol("123");
 const anotherId = Symbol("123");
 
@@ -22,12 +25,12 @@ console.log(id === anotherId);
 
 const heros = ["shaktiman", "naagraj", "doga"];
 let myObj = {
-  name: "hitesh",
-  age: 22,
+    name: "hitesh",
+    age: 22,
 };
 
 const myFunction = function () {
-  console.log("Hello world");
+    console.log("Hello world");
 };
 
 console.log(typeof anotherId);
@@ -47,8 +50,8 @@ console.log(Name, anotherName);
 
 // non-primitive (Heap)
 let obj = {
-  name: "Abhishek",
-  age: 44,
+    name: "Abhishek",
+    age: 44,
 };
 
 let anotherObj = obj;

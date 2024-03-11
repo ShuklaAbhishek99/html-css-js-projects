@@ -25,7 +25,7 @@ const JsUser = {
 // console.log(JsUser[mySym])
 
 JsUser.email = "Abhishek@chatgpt.com";
-// Object.freeze(JsUser) => this method freezes the population or propagation of object that is provided
+// Object.freeze(JsUser) // => this method freezes the population or propagation of object that is provided
 JsUser.email = "Abhishek@microsoft.com";
 // console.log(JsUser);
 

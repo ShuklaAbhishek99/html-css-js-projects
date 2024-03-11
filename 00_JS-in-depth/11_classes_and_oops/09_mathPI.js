@@ -4,12 +4,19 @@
 const descripter = Object.getOwnPropertyDescriptor(Math, "PI");
 
 // when we print this line, it give serveral properties which are hard coded
-// means it can't be change, if writtable: false, we can overwrite it
+// means it can't be change, if writtable: false, we can't overwrite it
 // we can also do this in our own object too using defineProperty()
-// console.log(descripter);
+console.log(descripter);
+
+Object.defineProperty(Math, "PI", {
+    value: 3.141592653589793,
+    writable: false, // Since Math.PI should not be modified
+    enumerable: false, // Math.PI should not appear in for...in loops
+    configurable: false, // Math.PI should not be deleted or have its attributes changed
+});
 
 // console.log(Math.PI);
-// Math.PI = 5
+// Math.PI = 5;
 // console.log(Math.PI);
 
 const coffee = {
