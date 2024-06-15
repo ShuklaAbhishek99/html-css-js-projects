@@ -35,6 +35,8 @@
         xhr.onreadystatechange = function () {
             console.log(xhr.readyState);
             if (xhr.readyState === 4) {
+                // we are receiving data in string format, which is JSON data (so, can't apply object methods)
+                // first we to convert the string to JSON
                 const data = JSON.parse(this.responseText);
                 console.log(typeof data);
                 console.log(data.followers);

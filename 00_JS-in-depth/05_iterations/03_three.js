@@ -27,7 +27,7 @@ map.set("IN", "India");
 // console.log(map);
 // destructuring with map
 for (const [key, value] of map) {
-  // console.log(key, ':-', value);
+  console.log(key, ':-', value);
 }
 
 // arrays, maps, and strings are iterable in the way above, but not object

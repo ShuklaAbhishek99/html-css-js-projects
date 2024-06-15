@@ -4,6 +4,8 @@ class User {
         this.password = password;
     }
 
+    // when using get-set, one can't work without another, so get-set should be used
+    // together inside a class, it can't just a get method and no set
     get email() {
         // this makes completly new variable whose 
         // value gets overwritten to constructor

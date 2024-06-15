@@ -37,6 +37,9 @@ function loginUserMessage(username = "sam") {
 // console.log(loginUserMessage("abhishek"))
 // console.log(loginUserMessage("abhishek"))
 
+// when taking params as spread operator, it gets converted into an array
+// so ...num1 is an array, we can apply any array methods to it
+// like we can sum up all its values to a single value using arr.reduce()
 function calculateCartPrice(val1, val2, ...num1) {
   return num1;
 }

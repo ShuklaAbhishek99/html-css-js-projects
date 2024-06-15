@@ -45,6 +45,8 @@ function addone(num) {
 }
 
 // function stored in variable and called before declaration, gives error
+// because it is now treated like variables, normally function are just funciton
+// definition
 addTwo(5);
 const addTwo = function (num) {
   return num + 2;

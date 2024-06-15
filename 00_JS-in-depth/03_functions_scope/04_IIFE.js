@@ -20,5 +20,5 @@
 
 // +++++++++++++++++IMPORTANT+++++++++++++++
 // when using two IIFE we have to write semi-colon(;) at the end of each IIFE,
-// while we can avoid this to the last IIFE as there is not statement written after this
+// while we can avoid this to the last IIFE as there is no statement written after this
 // and this works fine, as JS intrepreter does it itself, but have always write (;)
